@@ -22,7 +22,7 @@
 		B02571561601496400B0E1EB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02571541601496400B0E1EB /* MainMenu.xib */; };
 		B025716816018CF000B0E1EB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B025716716018CF000B0E1EB /* IOKit.framework */; };
 		B025716A16018D0600B0E1EB /* DPCIManager.icns in Resources */ = {isa = PBXBuildFile; fileRef = B025716916018D0600B0E1EB /* DPCIManager.icns */; };
-		B025716C16018D9600B0E1EB /* pci.ids in Resources */ = {isa = PBXBuildFile; fileRef = B025716B16018D9600B0E1EB /* pci.ids */; };
+		B025716C16018D9600B0E1EB /* pciids/pci.ids in Resources */ = {isa = PBXBuildFile; fileRef = B025716B16018D9600B0E1EB /* pciids/pci.ids */; };
 		B05AE9BC162A500B005190E4 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = B05AE9BB162A500B005190E4 /* Task.m */; };
 		B07193831623B776006D5666 /* PCI.m in Sources */ = {isa = PBXBuildFile; fileRef = B07193821623B776006D5666 /* PCI.m */; };
 		B08396ED1627F137003427F4 /* Match.m in Sources */ = {isa = PBXBuildFile; fileRef = B08396EC1627F137003427F4 /* Match.m */; };
@@ -77,7 +77,7 @@
 		B02571551601496400B0E1EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B025716716018CF000B0E1EB /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		B025716916018D0600B0E1EB /* DPCIManager.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DPCIManager.icns; sourceTree = SOURCE_ROOT; };
-		B025716B16018D9600B0E1EB /* pci.ids */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pci.ids; sourceTree = SOURCE_ROOT; };
+		B025716B16018D9600B0E1EB /* pciids/pci.ids */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pciids/pci.ids; sourceTree = SOURCE_ROOT; };
 		B051DE22160682A4005CC4B6 /* Tables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tables.h; sourceTree = "<group>"; };
 		B051DE2416068316005CC4B6 /* License.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = License.h; sourceTree = "<group>"; };
 		B05AE9BA162A500B005190E4 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
@@ -199,7 +199,7 @@
 			children = (
 				B02571471601496400B0E1EB /* DPCIManager-Info.plist */,
 				B025716916018D0600B0E1EB /* DPCIManager.icns */,
-				B025716B16018D9600B0E1EB /* pci.ids */,
+				B025716B16018D9600B0E1EB /* pciids/pci.ids */,
 				B025714B1601496400B0E1EB /* main.m */,
 				B025714D1601496400B0E1EB /* DPCIManager-Prefix.pch */,
 			);
@@ -224,23 +224,6 @@
 			usesTabs = 0;
 		};
 /* End PBXGroup section */
-
-/* Begin PBXLegacyTarget section */
-		B0683A9D17AF4EE7003A10CB /* PCI IDs */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "-LOz pci.ids http://pciids.sourceforge.net/v2.2/pci.ids";
-			buildConfigurationList = B0683AA017AF4EE7003A10CB /* Build configuration list for PBXLegacyTarget "PCI IDs" */;
-			buildPhases = (
-			);
-			buildToolPath = /usr/bin/curl;
-			buildWorkingDirectory = "$(SRCROOT)";
-			dependencies = (
-			);
-			name = "PCI IDs";
-			passBuildSettingsInEnvironment = 1;
-			productName = "PCI IDs";
-		};
-/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		B025713A1601496300B0E1EB /* DPCIManager */ = {
@@ -301,7 +284,6 @@
 			targets = (
 				B025713A1601496300B0E1EB /* DPCIManager */,
 				B0F67A7E1696BDDD0059FD30 /* dspci */,
-				B0683A9D17AF4EE7003A10CB /* PCI IDs */,
 			);
 		};
 /* End PBXProject section */
@@ -314,7 +296,7 @@
 				876B527321288815003E6A82 /* README.md in Resources */,
 				B02571561601496400B0E1EB /* MainMenu.xib in Resources */,
 				B025716A16018D0600B0E1EB /* DPCIManager.icns in Resources */,
-				B025716C16018D9600B0E1EB /* pci.ids in Resources */,
+				B025716C16018D9600B0E1EB /* pciids/pci.ids in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +390,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_MARKETING_VERSION = 1.6;
-				CURRENT_PROJECT_VERSION = 287;
+				CURRENT_PROJECT_VERSION = 289;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -458,7 +440,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				CURRENT_MARKETING_VERSION = 1.6;
-				CURRENT_PROJECT_VERSION = 287;
+				CURRENT_PROJECT_VERSION = 289;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -504,37 +486,6 @@
 			};
 			name = Release;
 		};
-		B0683A9E17AF4EE7003A10CB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				DEBUGGING_SYMBOLS = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		B0683A9F17AF4EE7003A10CB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		B0F67A8A1696BDDD0059FD30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -549,7 +500,7 @@
 					"-sectcreate",
 					__TEXT,
 					__pci_ids,
-					pci.ids,
+					pciids/pci.ids,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.muntashirakon.dspci;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -570,7 +521,7 @@
 					"-sectcreate",
 					__TEXT,
 					__pci_ids,
-					pci.ids,
+					pciids/pci.ids,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.muntashirakon.dspci;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -594,15 +545,6 @@
 			buildConfigurations = (
 				B025715A1601496400B0E1EB /* Debug */,
 				B025715B1601496400B0E1EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B0683AA017AF4EE7003A10CB /* Build configuration list for PBXLegacyTarget "PCI IDs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B0683A9E17AF4EE7003A10CB /* Debug */,
-				B0683A9F17AF4EE7003A10CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
