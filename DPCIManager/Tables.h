@@ -371,6 +371,7 @@ static const struct {UInt32 id; UInt16 rev; char *name;} gCodecList[] = {
 	{ HDA_CODEC_CS4207,			0x0000,	"Cirrus Logic CS4207" },
 	{ HDA_CODEC_CS4210,			0x0000,	"Cirrus Logic CS4210" },
 	{ HDA_CODEC_ALC221,			0x0000,	"Realtek ALC221" },
+	{ HDA_CODEC_ALC256,			0x0000,	"Realtek ALC256" },
 	{ HDA_CODEC_ALC260,			0x0000,	"Realtek ALC260" },
 	{ HDA_CODEC_ALC262,			0x0000,	"Realtek ALC262" },
 	{ HDA_CODEC_ALC267,			0x0000,	"Realtek ALC267" },
